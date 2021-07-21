@@ -62,6 +62,13 @@ public class ExcelReader {
 		return cellData;
 	}
 	
+	public String getSheetCellData (int[]rowcol) {
+		
+		String cellData= excelData.getRow(rowcol[0]).getCell(rowcol[1]).toString();
+		
+		return cellData;
+	}
+	
 	/*
 	 * The method is responsible for extracting relevant header data from the sheet stored in excelData.
 	 * It instantiates a manifestData object and stores all of the manifest details for further 
