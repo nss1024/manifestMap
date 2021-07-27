@@ -11,113 +11,85 @@ import java.util.Map;
 
 public class CellLocations {
 
-	private int[] shippingLineRowCol=new int[2];
-	private int[] vesselNameRowCol=new int[2];
-	private int[] containerNumberRowCol=new int[2];
-	private int[] temptaleSerialNumberRowCol=new int[2];
-	private int[] destinationPortRowCol=new int[2];
-	private int[] loadingPortRowCol=new int[2];
-	private int[] comodityRowCol=new int[2];
-	private int[] growerRowCol=new int[2];
-	private int[][] palletBarcodesRowCol=new int[22][2];
+	//private int[] shippingLineRowCol=new int[2];
+	private Map <String, Integer[]> shippingLineRowCol = new HashMap<String,Integer[]>();
+ 	//private int[] vesselNameRowCol=new int[2];
+	private Map <String, Integer[]>vesselNameRowCol=new HashMap<String,Integer[]>();
+	//private int[] containerNumberRowCol=new int[2];
+	private Map <String, Integer[]> containerNumberRowCol = new HashMap<String,Integer[]>();
+	//private int[] temptaleSerialNumberRowCol=new int[2];
+	private HashMap<String,Integer[]> temptaleSerialNumberRowCol = new HashMap<String,Integer[]>();
+	//private int[] destinationPortRowCol=new int[2];
+	private HashMap<String,Integer[]> destinationPortRowCol = new HashMap<String,Integer[]>();
+	//private int[] loadingPortRowCol=new int[2];
+	private HashMap<String,Integer[]> loadingPortRowCol = new HashMap<String,Integer[]>();
+	//private int[] comodityRowCol=new int[2];
+	private HashMap<String,Integer[]> comodityRowCol = new HashMap<String,Integer[]>();
+	//private int[] growerRowCol=new int[2];
+	private HashMap<String,Integer[]> growerRowCol = new HashMap<String,Integer[]>();
+	//private int[][] palletBarcodesRowCol=new int[22][2];
+	private HashMap<String,Integer[][]> palletBarcodesRowCol = new HashMap<String,Integer[][]>();
 	
-	
-	public CellLocations() {
-		super();
-	}
-
-
-	public int[] getShippingLineRowCol() {
+	public Map<String, Integer[]> getShippingLineRowCol() {
 		return shippingLineRowCol;
 	}
-
-
-	public void setShippingLineRowCol(int[] shippingLineRowCol) {
+	public void setShippingLineRowCol(Map<String, Integer[]> shippingLineRowCol) {
 		this.shippingLineRowCol = shippingLineRowCol;
 	}
-
-
-	public int[] getVesselNameRowCol() {
+	public Map<String, Integer[]> getVesselNameRowCol() {
 		return vesselNameRowCol;
 	}
-
-
-	public void setVesselNameRowCol(int[] vesselNameRowCol) {
+	public void setVesselNameRowCol(Map<String, Integer[]> vesselNameRowCol) {
 		this.vesselNameRowCol = vesselNameRowCol;
 	}
-
-
-	public int[] getContainerNumberRowCol() {
+	public Map<String, Integer[]> getContainerNumberRowCol() {
 		return containerNumberRowCol;
 	}
-
-
-	public void setContainerNumberRowCol(int[] containerNumberRowCol) {
+	public void setContainerNumberRowCol(Map<String, Integer[]> containerNumberRowCol) {
 		this.containerNumberRowCol = containerNumberRowCol;
 	}
-
-
-	public int[] getTemptaleSerialNumberRowCol() {
+	public HashMap<String, Integer[]> getTemptaleSerialNumberRowCol() {
 		return temptaleSerialNumberRowCol;
 	}
-
-
-	public void setTemptaleSerialNumberRowCol(int[] temptaleSerialNumberRowCol) {
+	public void setTemptaleSerialNumberRowCol(HashMap<String, Integer[]> temptaleSerialNumberRowCol) {
 		this.temptaleSerialNumberRowCol = temptaleSerialNumberRowCol;
 	}
-
-
-	public int[] getDestinationPortRowCol() {
+	public HashMap<String, Integer[]> getDestinationPortRowCol() {
 		return destinationPortRowCol;
 	}
-
-
-	public void setDestinationPortRowCol(int[] destinationPortRowCol) {
+	public void setDestinationPortRowCol(HashMap<String, Integer[]> destinationPortRowCol) {
 		this.destinationPortRowCol = destinationPortRowCol;
 	}
-
-
-	public int[] getLoadingPortRowCol() {
+	public HashMap<String, Integer[]> getLoadingPortRowCol() {
 		return loadingPortRowCol;
 	}
-
-
-	public void setLoadingPortRowCol(int[] loadingPortRowCol) {
+	public void setLoadingPortRowCol(HashMap<String, Integer[]> loadingPortRowCol) {
 		this.loadingPortRowCol = loadingPortRowCol;
 	}
-
-
-	public int[] getComodityRowCol() {
+	public HashMap<String, Integer[]> getComodityRowCol() {
 		return comodityRowCol;
 	}
-
-
-	public void setComodityRowCol(int[] comodityRowCol) {
+	public void setComodityRowCol(HashMap<String, Integer[]> comodityRowCol) {
 		this.comodityRowCol = comodityRowCol;
 	}
-
-
-	public int[] getGrowerRowCol() {
+	public HashMap<String, Integer[]> getGrowerRowCol() {
 		return growerRowCol;
 	}
-
-
-	public void setGrowerRowCol(int[] growerRowCol) {
+	public void setGrowerRowCol(HashMap<String, Integer[]> growerRowCol) {
 		this.growerRowCol = growerRowCol;
 	}
-
-
-	public int[][] getPalletBarcodesRowCol() {
+	public HashMap<String, Integer[][]> getPalletBarcodesRowCol() {
 		return palletBarcodesRowCol;
 	}
-
-
-	public void setPalletBarcodesRowCol(int[][] palletBarcodesRowCol) {
+	public void setPalletBarcodesRowCol(HashMap<String, Integer[][]> palletBarcodesRowCol) {
 		this.palletBarcodesRowCol = palletBarcodesRowCol;
 	}
 	
-	
-	
-	
-	
 }
+	
+	
+	
+	
+	
+	
+

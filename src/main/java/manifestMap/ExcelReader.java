@@ -85,7 +85,8 @@ public class ExcelReader {
 				 getSheetCellData(24,2),//destPort
 				 getSheetCellData(15,7),//loadPort
 				 getSheetCellData(21,2),//comodity
-				 getSheetCellData(1,4)//grower
+				 getSheetCellData(1,4),//grower
+				 getSheetCellData(1,4)//origin
 				 );
 		 //System.out.println("manifets header generated");
 		 

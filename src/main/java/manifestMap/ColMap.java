@@ -7,12 +7,11 @@ import java.util.Map;
 
 public class ColMap {
 	
-	/*
-	 * Instance initializer creates the hashmap 
-	 */
+		
+	private Map<String,Integer> colmap;
 	
-	{
-		final Map<String,Integer> colmap = new HashMap<String, Integer>();
+	void ColMap(){
+		colmap = new HashMap<String, Integer>();
 		colmap.put("A", 0);
 		colmap.put("B", 1);
 		colmap.put("C", 2);
@@ -39,6 +38,10 @@ public class ColMap {
 		colmap.put("X", 23);
 		colmap.put("Y", 24);
 		colmap.put("Z", 25);
+	}
+
+	public Map<String, Integer> getColmap() {
+		return colmap;
 	}
 
 }

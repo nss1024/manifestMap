@@ -1,5 +1,5 @@
 /*
- * This class will the contents of a map file, the arrayList provided to it by mapReader.
+ * This class will process the contents of a map file, the arrayList provided to it by mapReader.
  * it returns a list of numbers denoting cell locations that excel reader uses to access specific cells.
  * 
  */
@@ -10,21 +10,25 @@ import java.util.List;
 
 public class MapProcessor {
 	
-	private String mapFilePath;
 	private  List <String> fileContents;
-	private mapReader mapreader;
 	private CellLocations cellLocations ;
-	private ColMap colMap;
+	private ColMap colmaps;
 	
 	
 	public MapProcessor(String mapFilePath) {
 		super();
-		this.mapFilePath = mapFilePath;
 		fileContents = new mapReader(mapFilePath).getFileContent();
 		cellLocations = new CellLocations();
-		colMap = new ColMap();
+		colmaps = new ColMap();
 	}
 	
-	
+	private void processMapFile () {
+		
+		for (String s : fileContents) {			
+			int col =colmaps.getColmap().get(s.split(",")[1].substring(0,1));
+			int row = Integer.parseInt(s.split(",")[1].substring(1,s.split(",")[1].length()));
+		}
+		
+	}
 
 }

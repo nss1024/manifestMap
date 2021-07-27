@@ -20,6 +20,11 @@ public class manifestData {
 	private String loadingPort;
 	private String comodity;
 	private String grower;
+	private String origin;
+	public String getOrigin() {
+		return origin;
+	}
+
 	private Map <String,String> palletBarcodes = new HashMap<String,String>(22);//key=pallet barcode, value = fruit size
 	
 	
@@ -65,7 +70,7 @@ public class manifestData {
 	}
 
 	public manifestData(String shippingLIne, String vesselName, String containerNumber,
-			String temptaleSerialNumber, String destinationPort, String loadingPort, String comodity, String grower) {
+			String temptaleSerialNumber, String destinationPort, String loadingPort, String comodity, String grower, String origin) {
 		super();
 		this.shippingLIne = shippingLIne;
 		this.vesselName = vesselName;
@@ -75,6 +80,7 @@ public class manifestData {
 		this.loadingPort = loadingPort;
 		this.comodity = comodity;
 		this.grower = grower;
+		this.origin= origin;
 	}
 
 	@Override
@@ -82,7 +88,7 @@ public class manifestData {
 		return "manifestHeaderData [shippingLIne=" + shippingLIne + ", vesselName=" + vesselName + ", containerNumber="
 				+ containerNumber + ", temptaleSerialNumber=" + temptaleSerialNumber + ", destinationPort="
 				+ destinationPort + ", loadingPort=" + loadingPort + ", comodity=" + comodity + ", grower=" + grower
-				+ ", palletBarcodes=" + palletBarcodes + "]";
+				+ ", palletBarcodes=" + palletBarcodes + "origin = " + origin + "]";
 	}
 
 

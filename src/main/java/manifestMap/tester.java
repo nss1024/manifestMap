@@ -24,7 +24,7 @@ public class tester {
 	public static void mapReadertest() {
 		
 		mapReader mr = new mapReader("testMap.map");
-		System.out.println(mr.getFileContent().get(0));
+		System.out.println(mr.getFileContent());
 		
 	}
 
