@@ -10,7 +10,7 @@ public class ColMap {
 		
 	private Map<String,Integer> colmap;
 	
-	void ColMap(){
+	ColMap(){
 		colmap = new HashMap<String, Integer>();
 		colmap.put("A", 0);
 		colmap.put("B", 1);
@@ -38,6 +38,18 @@ public class ColMap {
 		colmap.put("X", 23);
 		colmap.put("Y", 24);
 		colmap.put("Z", 25);
+		colmap.put("AA", 26);
+		colmap.put("AB", 27);
+		colmap.put("AC", 28);
+		colmap.put("AD", 29);
+		colmap.put("AE", 30);
+		colmap.put("AF", 31);
+		colmap.put("AG", 32);
+		colmap.put("AH", 33);
+		colmap.put("AI", 34);
+		colmap.put("AJ", 35);
+		colmap.put("AK", 36);
+		colmap.put("AL", 37);
 	}
 
 	public Map<String, Integer> getColmap() {

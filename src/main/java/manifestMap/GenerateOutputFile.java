@@ -14,7 +14,7 @@ public class GenerateOutputFile {
 
 	private String outputFileNameAndPath;
 	private manifestData mfData;
-	private String [] cols = {"Pallet Barode","Fruit Size","Comodity","Grower","Container","TempTale","Vessel","Shipping Line","Loading Port","Destination Port"};
+	private String [] cols = {"Pallet Barode","Fruit Size","Origin","Comodity","Grower","Container","TempTale","Vessel","Shipping Line","Loading Port","Destination Port"};
 	private List <String> columns = new ArrayList<String>(Arrays.asList(cols));
 	
 	public GenerateOutputFile(String outputFileNameAndPath, manifestData mfData) {
@@ -29,6 +29,8 @@ public class GenerateOutputFile {
 		try {
 			FileWriter writer = new FileWriter(outputFileNameAndPath);
 			StringBuilder sb = new StringBuilder();
+			sb.append(mfData.getOrigin());
+			sb.append(",");
 			sb.append(mfData.getComodity());
 			sb.append(",");
 			sb.append(mfData.getGrower());

@@ -51,7 +51,7 @@ public class mapReader {
 				fileContents.add(lineContents);
 			}
 			bf.close();
-			if(fileContents.size()==53) {System.out.println("File read successful");}
+			if(fileContents.size()==53) {System.out.println("Map File read successful");}
 			else {System.out.println("Map file incomplete, missing" + validateMapFileContents(cols,fileContents)+ " column(s)");}
 			return fileContents;
 			
